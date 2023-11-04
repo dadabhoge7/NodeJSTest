@@ -1,0 +1,28 @@
+// nodeJS - Use module system to organize the code.
+
+-->>There are three type in module
+1 Core module (InBuilt Module) 
+- A. OS Module (const os = require('os');)
+- - os.platform
+- - os.type
+- - os.release 
+- B. Path Module (const path = require('path');)
+- - path.join();
+- - path.extname();
+- - path.basename();
+- C. URL Module (const url = require('url');)
+- - url.parse();
+- - console.log(`Protocol : ${parsedUrl.protocol}`);
+- - console.log(`Host : ${parsedUrl.host}`);
+- - console.log(`HostName : ${parsedUrl.hostname}`);
+- - console.log(`path : ${parsedUrl.path}`);
+- - console.log(`Query : ${JSON.stringify(parsedUrl.query)}`);
+- - Formatted URL (01_urlModule.js)
+- D. FS (File System -  Read and Write Module)
+- - fs.writeFile('fileName',"Write to Msg",(err)=>{})
+- - fs.readFile('fileName','utf8',(err,data)=>{});
+- - fs.stat('01_fsModuleFile',(err,stat)=>{});---- (stat.siza, stat.isFile(), stat.isDirectory())
+- - fs.unlink('01_fsModuleFile',(err)=>{});-----Delete the file
+
+2 Local Module
+3 Third party Module
