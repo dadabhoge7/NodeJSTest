@@ -23,6 +23,14 @@
 - - fs.readFile('fileName','utf8',(err,data)=>{});
 - - fs.stat('01_fsModuleFile',(err,stat)=>{});---- (stat.siza, stat.isFile(), stat.isDirectory())
 - - fs.unlink('01_fsModuleFile',(err)=>{});-----Delete the file
+- - fs.appendFile('fileName.txt',"contentToAppend",(err)=>{});
+- - fs.mkdir('01_newDirectoryDirName',(err)=>{});
+- - fs.readdir('01_newDirectoryDirName',(err,files)=>{});
+- - fs.rmdir('01_newDirectory',(err)=>{});
+- E. HTTP Module (// HTTP Modules - Creates an HTTP server that listens to request and send responses)
+- - // HTTP Modules <----> (const http = require('http');)
+- - // Create a server <----> const server = http.createServer((req,res)=>{});
+- - // listens on port <----> server.listen(port,()=>{});
 
 2 Local Module
 3 Third party Module
