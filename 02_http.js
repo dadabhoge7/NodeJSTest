@@ -19,6 +19,7 @@ const server = http.createServer((req,res)=>{
     }
     else if(req.url=='/user') {
         res.setHeader('Content-Type','text/html');
+        //get the user data from database
         const user = [
                 {
                   "id": 1,
